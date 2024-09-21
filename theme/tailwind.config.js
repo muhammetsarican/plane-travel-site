@@ -7,13 +7,13 @@ module.exports = {
     container: {
       center: true,
     },
-    colors: {
-      "primary": "#E6DBFF",
-      "secondary": "#F6F4F8",
-      "primary-white": "#FFFFFF",
-      "primary-purple": "#4A0096",
-    },
     extend: {
+      colors: {
+        "primary": "#E6DBFF",
+        "secondary": "#F6F4F8",
+        "primary-white": "#FFFFFF",
+        "primary-purple": "#4A0096",
+      },
     },
   },
   plugins: [],

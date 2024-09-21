@@ -11,65 +11,464 @@
 
 <body class="bg-primary">
     <!-- container - start -->
-    <div class="container">
+    <div class="container my-[3.125%]">
         <!-- main box - start -->
-        <div id="main-box" class="bg-secondary rounded-xl">
+        <div id="main-box" class="bg-secondary rounded-3xl">
             <!-- title bar - start -->
             <div id="title" class="flex justify-between items-center p-3">
                 <!-- title box - start -->
-                <div id="title-box">
-                    <div id="logo"></div>
-                    <div id="title" class="uppercase font-bold">plane scape</div>
+                <div id="title-box" class="flex items-center gap-1">
+                    <div id="logo" class="relative bg-primary-purple w-8 h-8  rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="absolute left-[-5px] lucide-plane fill-white w-8 h-8 rotate-45">
+                            <path
+                                d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                        </svg>
+                    </div>
+                    <div id="title" class="uppercase font-bold text-slate-800">plane scape</div>
                 </div>
                 <!-- title box - end -->
                 <!-- buttons box - start -->
-                <div id="buttons" class="flex gap-5">
+                <div id="buttons" class="flex gap-5 items-center text-sm font-medium text-slate-700">
                     <div id="page-buttons" class="flex gap-3">
-                        <div id="page-button" class="flex gap-1">
-                            <div id="logo"></div>
+                        <div id="page-button" class="flex gap-1 items-center">
+                            <div id="logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-tag stroke-2 stroke-white fill-primary-purple w-4 h-4">
+                                    <path
+                                        d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+                                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+                                </svg>
+                            </div>
                             <div id="title" class="capitalize">deals</div>
                         </div>
-                        <div id="page-button" class="flex gap-1">
-                            <div id="logo"></div>
+                        <div id="page-button" class="flex gap-1 items-center">
+                            <div id="logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-earth w-4 h-4 fill-primary-purple stroke-2 stroke-primary-purple">
+                                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                                    <path
+                                        d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                                    <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                                    <circle class="fill-none" cx="12" cy="12" r="10" />
+                                </svg>
+                            </div>
                             <div id="title" class="capitalize">discover</div>
                         </div>
                     </div>
-                    <div id="avatar-button">
-                        <div id="avatar"></div>
-                        <div id="user-info" class="capitalize">joana smith</div>
+                    <div id="avatar-button" class="flex items-center gap-2">
+                        <div id="avatar" class="rounded-full overflow-hidden">
+                            <img class="w-8 h-8" src="../assets/images/avatar/this-person-not-exist.jpeg" alt="">
+                        </div>
+                        <div id="user-info" class="capitalize">joane smith</div>
                     </div>
                 </div>
                 <!-- buttons box - end -->
             </div>
             <!-- title bar - end -->
             <!-- content box - start -->
-            <div id="content-box" class="grid grid-cols-2">
+            <div id="content-box" class="grid grid-cols-5">
                 <!-- left side - start -->
-                <div id="left-side">
+                <div id="left-side" class="col-span-4">
                     <!-- booking box - start -->
-                    <div id="booking" class="rounded-lg bg-primary-white">
+                    <div id="booking" class="rounded-lg bg-primary-white m-5">
                         <div id="booking-title-bar" class="flex justify-between items-center p-3">
-                            <div id="title" class="flex gap-3">
-                                <div id="icon"></div>
+                            <div id="title" class="flex items-center gap-1 text-sm text-slate-800">
+                                <div id="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-plane w-4 h-4 fill-slate-800 rotate-45">
+                                        <path
+                                            d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                                    </svg>
+                                </div>
                                 <div id="title" class="uppercase font-bold">book your flight</div>
                             </div>
                             <div id="direction-selector" class="flex items-center text-xs font-semibold">
-                                <button class="bg-primary-purple text-primary-white p-3 rounded-s-full">Round
+                                <button class="bg-primary-purple text-primary-white px-3 py-2 rounded-s-full">Round
                                     trip</button>
-                                <button class="bg-primary-purple/30 text-primary-purple p-3 rounded-e-full">One
+                                <button class="bg-primary-purple/10 text-primary-purple px-3 py-2 rounded-e-full">One
                                     way</button>
                             </div>
                         </div>
+                        <div id="booking-body" class="grid grid-cols-2 gap-3 p-3">
+                            <div class="flex gap-1">
+                                <div id="input" class="w-full relative">
+                                    <span class="absolute left-2 inset-y-[20%]"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plane-takeoff w-4 h-4 fill-primary-purple stroke-2 stroke-primary-purple">
+                                            <path d="M2 22h20" />
+                                            <path class="stroke-none"
+                                                d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z" />
+                                        </svg></span>
+                                    <input type="text" name="" id=""
+                                        class="border-2 border-slate-200 w-full rounded-s-full">
+                                </div>
+                                <div id="input" class="w-full relative">
+                                    <span class="absolute left-2 inset-y-[20%]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plane-landing w-4 h-4 fill-primary-purple stroke-2 stroke-primary-purple">
+                                            <path d="M2 22h20" />
+                                            <path class="stroke-none"
+                                                d="M3.77 10.77 2 9l2-4.5 1.1.55c.55.28.9.84.9 1.45s.35 1.17.9 1.45L8 8.5l3-6 1.05.53a2 2 0 0 1 1.09 1.52l.72 5.4a2 2 0 0 0 1.09 1.52l4.4 2.2c.42.22.78.55 1.01.96l.6 1.03c.49.88-.06 1.98-1.06 2.1l-1.18.15c-.47.06-.95-.02-1.37-.24L4.29 11.15a2 2 0 0 1-.52-.38Z" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="" id=""
+                                        class="border-2 border-slate-200 w-full rounded-e-full">
+                                </div>
+                            </div>
+                            <div class="flex gap-1">
+                                <div id="input" class="w-full relative">
+                                    <span class="absolute left-2 inset-y-[20%]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-calendar-days w-4 h-4 stroke-2 stroke-primary-purple">
+                                            <path d="M8 2v4" />
+                                            <path d="M16 2v4" />
+                                            <rect width="18" height="18" x="3" y="4" rx="2" />
+                                            <path d="M3 10h18" />
+                                            <path d="M8 14h.01" />
+                                            <path d="M12 14h.01" />
+                                            <path d="M16 14h.01" />
+                                            <path d="M8 18h.01" />
+                                            <path d="M12 18h.01" />
+                                            <path d="M16 18h.01" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="" id=""
+                                        class="border-2 border-slate-200 w-full rounded-s-full">
+                                </div>
+                                <div id="input" class="w-full relative">
+                                    <span class="absolute left-2 inset-y-[20%]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-calendar-days w-4 h-4 stroke-2 stroke-primary-purple">
+                                            <path d="M8 2v4" />
+                                            <path d="M16 2v4" />
+                                            <rect width="18" height="18" x="3" y="4" rx="2" />
+                                            <path d="M3 10h18" />
+                                            <path d="M8 14h.01" />
+                                            <path d="M12 14h.01" />
+                                            <path d="M16 14h.01" />
+                                            <path d="M8 18h.01" />
+                                            <path d="M12 18h.01" />
+                                            <path d="M16 18h.01" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="" id=""
+                                        class="border-2 border-slate-200 w-full rounded-e-full">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="booking-button" class="p-3">
+                            <button
+                                class="rounded-md bg-primary-purple text-sm text-primary-white font-bold px-3 py-2">Show
+                                flights</button>
+                        </div>
                     </div>
                     <!-- booking box - end -->
+                    <!-- flights - start -->
+                    <div id="flight-container" class="grid grid-cols-3 gap-3 m-5">
+                        <!-- flight box - start -->
+                        <div id="flight-box" class="col-span-2 grid grid-cols-1 gap-2">
+                            <div id="flight-item">
+                                <div class="bg-primary-white rounded-lg rounded-es-none h-fit">
+                                    <div id="flight-title" class="text-sm font-bold p-3">Milano - Madrid</div>
+                                    <div id="flight-direction" class="flex justify-between items-center p-5">
+                                        <div id="source-detail">
+                                            <div id="source-title" class="flex gap-1 items-center">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-plane-takeoff stroke-slate-600 w-4 h-4">
+                                                        <path d="M2 22h20" />
+                                                        <path
+                                                            d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z" />
+                                                    </svg>
+                                                </span>
+                                                <p class="text-slate-500 text-xs font-semibold">Departure</p>
+                                            </div>
+                                            <div id="time" class="font-semibold">7:30 AM</div>
+                                            <div id="source-place" class="text-slate-500 text-xs font-semibold">Airport:
+                                                MXP
+                                            </div>
+                                        </div>
+                                        <div id="divider" class="border-2 border-gray-300 w-1/6 h-fit"></div>
+                                        <div id="comp-detail" class="flex flex-col items-center gap-1">
+                                            <div id="comp-logo">
+                                                <img class="h-3" src="../assets/logos/flights/alitalia-logo.png" alt="">
+                                            </div>
+                                            <div id="plane-icon"><span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-plane w-5 h-5 fill-primary-purple rotate-45">
+                                                        <path
+                                                            d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                                                    </svg>
+                                                </span></div>
+                                            <div id="flight-duration" class="text-xs font-semibold text-slate-500">2h
+                                                25m
+                                                (Nonstop)</div>
+                                        </div>
+                                        <div id="divider" class="border-2 border-gray-300 w-1/6 h-fit"></div>
+                                        <div id="dest-detail">
+                                            <div id="dest-title" class="flex gap-1 items-center">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-plane-landing stroke-slate-600 w-4 h-4">
+                                                        <path d="M2 22h20" />
+                                                        <path
+                                                            d="M3.77 10.77 2 9l2-4.5 1.1.55c.55.28.9.84.9 1.45s.35 1.17.9 1.45L8 8.5l3-6 1.05.53a2 2 0 0 1 1.09 1.52l.72 5.4a2 2 0 0 0 1.09 1.52l4.4 2.2c.42.22.78.55 1.01.96l.6 1.03c.49.88-.06 1.98-1.06 2.1l-1.18.15c-.47.06-.95-.02-1.37-.24L4.29 11.15a2 2 0 0 1-.52-.38Z" />
+                                                    </svg></span>
+                                                <p class="text-slate-500 text-xs font-semibold">Arrival</p>
+                                            </div>
+                                            <div id="time" class="font-semibold">9:55 AM</div>
+                                            <div id="dest-place" class="text-slate-500 text-xs font-semibold">Airport:
+                                                MAD
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="flight-sum" class="flex justify-between">
+                                        <div id="flight-price" class="p-5">
+                                            <p class="text-primary-purple font-bold text-sm">Price: $234</p>
+                                            <p class="text-slate-500 font-semibold text-xs">Round Trip</p>
+                                        </div>
+                                        <div id="book-button" class="mt-auto">
+                                            <button
+                                                class="bg-primary-purple text-primary-white px-6 py-4 rounded-ss-lg rounded-ee-lg text-sm font-bold capitalize">book
+                                                flight</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-primary-purple/20 p-3 text-primary-purple text-xs w-fit rounded-es-lg rounded-ee-lg">
+                                    <u>Check the details</u>
+                                </div>
+                            </div>
+                            <div id="flight-item">
+                                <div class="bg-primary-white rounded-lg rounded-es-none h-fit">
+                                    <div id="flight-title" class="text-sm font-bold p-3">Milano - Madrid</div>
+                                    <div id="flight-direction" class="flex justify-between items-center p-5">
+                                        <div id="source-detail">
+                                            <div id="source-title" class="flex gap-1 items-center">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-plane-takeoff stroke-slate-600 w-4 h-4">
+                                                        <path d="M2 22h20" />
+                                                        <path
+                                                            d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z" />
+                                                    </svg>
+                                                </span>
+                                                <p class="text-slate-500 text-xs font-semibold">Departure</p>
+                                            </div>
+                                            <div id="time" class="font-semibold">7:30 AM</div>
+                                            <div id="source-place" class="text-slate-500 text-xs font-semibold">Airport:
+                                                MXP
+                                            </div>
+                                        </div>
+                                        <div id="divider" class="border-2 border-gray-300 w-1/6 h-fit"></div>
+                                        <div id="comp-detail" class="flex flex-col items-center gap-1">
+                                            <div id="comp-logo">
+                                                <img class="h-3" src="../assets/logos/flights/alitalia-logo.png" alt="">
+                                            </div>
+                                            <div id="plane-icon"><span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-plane w-5 h-5 fill-primary-purple rotate-45">
+                                                        <path
+                                                            d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                                                    </svg>
+                                                </span></div>
+                                            <div id="flight-duration" class="text-xs font-semibold text-slate-500">2h
+                                                25m
+                                                (Nonstop)</div>
+                                        </div>
+                                        <div id="divider" class="border-2 border-gray-300 w-1/6 h-fit"></div>
+                                        <div id="dest-detail">
+                                            <div id="dest-title" class="flex gap-1 items-center">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-plane-landing stroke-slate-600 w-4 h-4">
+                                                        <path d="M2 22h20" />
+                                                        <path
+                                                            d="M3.77 10.77 2 9l2-4.5 1.1.55c.55.28.9.84.9 1.45s.35 1.17.9 1.45L8 8.5l3-6 1.05.53a2 2 0 0 1 1.09 1.52l.72 5.4a2 2 0 0 0 1.09 1.52l4.4 2.2c.42.22.78.55 1.01.96l.6 1.03c.49.88-.06 1.98-1.06 2.1l-1.18.15c-.47.06-.95-.02-1.37-.24L4.29 11.15a2 2 0 0 1-.52-.38Z" />
+                                                    </svg></span>
+                                                <p class="text-slate-500 text-xs font-semibold">Arrival</p>
+                                            </div>
+                                            <div id="time" class="font-semibold">9:55 AM</div>
+                                            <div id="dest-place" class="text-slate-500 text-xs font-semibold">Airport:
+                                                MAD
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="flight-sum" class="flex justify-between">
+                                        <div id="flight-price" class="p-5">
+                                            <p class="text-primary-purple font-bold text-sm">Price: $234</p>
+                                            <p class="text-slate-500 font-semibold text-xs">Round Trip</p>
+                                        </div>
+                                        <div id="book-button" class="mt-auto">
+                                            <button
+                                                class="bg-primary-purple text-primary-white px-6 py-4 rounded-ss-lg rounded-ee-lg text-sm font-bold capitalize">book
+                                                flight</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-primary-purple/20 p-3 text-primary-purple text-xs w-fit rounded-es-lg rounded-ee-lg">
+                                    <u>Check the details</u>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- flight box - end -->
+                        <!-- sort box - start -->
+                        <div id="sort-box">
+                            <div id="sort-by" class="flex flex-col items-start p-2">
+                                <label for="#sort" class="font-bold text-sm p-1">Sort by:</label>
+                                <select name="sort" id="sort"
+                                    class="px-3 py-2 bg-white w-full rounded-lg capitalize text-xs">
+                                    <option value="lowest">lowest price</option>
+                                    <option value="highest">highest price</option>
+                                </select>
+                            </div>
+                            <div id="arrival-time" class="text-xs p-2">
+                                <p class="p-1 capitalize font-bold text-sm">arrival time</p>
+                                <div id="arrival-time-inputs" class="grid grid-cols-6 gap-1 py-1">
+                                    <input type="radio" name="arrival" id="arrival" checked>
+                                    <label class="col-span-5" for="">5:00 AM - 11:59 AM</label>
+                                    <input type="radio" name="arrival" id="arrival">
+                                    <label class="col-span-5" for="">12:00 PM - 5:59 PM</label>
+                                </div>
+                            </div>
+                            <div id="stops" class="text-xs p-2">
+                                <p class="p-1 capitalize font-bold text-sm">stops</p>
+                                <div id="stops-inputs" class="py-1 grid grid-cols-6 gap-1">
+                                    <input type="radio" name="stops" id="stops" checked>
+                                    <p class="col-span-5 flex justify-between"><label for="">Nonstop</label><label
+                                            for="">$230</label>
+                                    </p>
+                                    <input type="radio" name="stops" id="stops">
+                                    <p class="col-span-5 flex justify-between"><label for="">1 Stop</label><label
+                                            for="">$230</label>
+                                    </p>
+                                    <input type="radio" name="stops" id="stops">
+                                    <p class="col-span-5 flex justify-between"><label for="">2+ Stops</label><label
+                                            for="">$230</label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="airlines-included" class="p-2">
+                                <p class="p-1 capitalize font-bold text-sm">airlines included</p>
+                                <div class="py-1 grid grid-cols-6 gap-1">
+                                    <input type="radio" name="airlines" id="airlines" checked>
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label
+                                            for="">alitalia</label><label for="">$230</label></p>
+                                    <input type="radio" name="airlines" id="airlines">
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label
+                                            for="">lufthansa</label><label for="">$230</label></p>
+                                    <input type="radio" name="airlines" id="airlines">
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label for="">air
+                                            france</label><label for="">$230</label></p>
+                                    <input type="radio" name="airlines" id="airlines">
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label for="">brussels
+                                            airlines</label><label for="">$230</label></p>
+                                    <input type="radio" name="airlines" id="airlines">
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label for="">air
+                                            italy</label><label for="">$230</label></p>
+                                    <input type="radio" name="airlines" id="airlines">
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label
+                                            for="">siberia</label><label for="">$230</label></p>
+                                    <input type="radio" name="airlines" id="airlines">
+                                    <p class="col-span-5 flex justify-between text-xs capitalize"><label
+                                            for="">ataturk</label><label for="">$230</label></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sort box - end -->
+                    </div>
+                    <!-- flights - end -->
                 </div>
                 <!-- left side - end -->
+                <!-- right side - start -->
+                <div id="right-side" class="p-3">
+                    <div id="other-menus" class="flex flex-col gap-3">
+                        <div id="menu-item" class="relative w-56 h-56 rounded-xl overflow-hidden">
+                            <img src="../assets/images/menu/vintage-car-under-sunset.jpg" alt=""
+                                class="absolute w-full h-full object-cover">
+                            <div id="menu-title" class="absolute left-3 bottom-3 text-white">
+                                <span id="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-car-front">
+                                        <path
+                                            d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8" />
+                                        <path d="M7 14h.01" />
+                                        <path d="M17 14h.01" />
+                                        <rect width="18" height="8" x="3" y="10" rx="2" />
+                                        <path d="M5 18v2" />
+                                        <path d="M19 18v2" />
+                                    </svg>
+                                </span>
+                                <p class="uppercase text-base uppercase font-bold">car rentals</p>
+                            </div>
+                        </div>
+                        <div id="menu-item" class="relative w-56 h-56 rounded-xl overflow-hidden">
+                            <img src="../assets/images/menu/blue-hotel.jpg" alt=""
+                                class="absolute w-full h-full object-cover">
+                            <div id="menu-title" class="absolute left-3 bottom-3 text-white">
+                                <span id="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-hotel">
+                                        <path d="M10 22v-6.57" />
+                                        <path d="M12 11h.01" />
+                                        <path d="M12 7h.01" />
+                                        <path d="M14 15.43V22" />
+                                        <path d="M15 16a5 5 0 0 0-6 0" />
+                                        <path d="M16 11h.01" />
+                                        <path d="M16 7h.01" />
+                                        <path d="M8 11h.01" />
+                                        <path d="M8 7h.01" />
+                                        <rect x="4" y="2" width="16" height="20" rx="2" />
+                                    </svg>
+                                </span>
+                                <p class="uppercase text-base uppercase font-bold">hotels</p>
+                            </div>
+                        </div>
+                        <div id="menu-item" class="relative w-56 h-56 rounded-xl overflow-hidden">
+                            <img src="../assets/images/menu/green-holiday.jpg" alt=""
+                                class="absolute w-full h-full object-cover">
+                            <div id="menu-title" class="absolute left-3 bottom-3 text-white">
+                                <span id="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-umbrella">
+                                        <path d="M22 12a10.06 10.06 1 0 0-20 0Z" />
+                                        <path d="M12 12v8a2 2 0 0 0 4 0" />
+                                        <path d="M12 2v1" />
+                                    </svg>
+                                </span>
+                                <p class="uppercase text-base uppercase font-bold">travel packages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side - end -->
             </div>
             <!-- content box - end -->
         </div>
         <!-- main box - end -->
     </div>
     <!-- container - end -->
+    </div>
 </body>
 
 </html>
