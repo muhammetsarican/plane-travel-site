@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Scape</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="bg-blue-500 text-slate-500">
+    <!-- container - start -->
+    <div class="container my-[3.125%]">
+        <!-- main box - start -->
+        <div id="main-box" class="bg-secondary rounded-lg overflow-hidden">
+            <!-- category box - start -->
+            <div id="category-bar" class="bg-primary-white flex justify-between items-center p-3">
+                <div id="categories" class="flex gap-5">
+                    <button
+                        class="border border-slate-300 rounded-md font-bold text-sm capitalize px-3 py-1">times</button>
+                    <button
+                        class="border border-slate-300 rounded-md font-bold text-sm capitalize px-3 py-1">stops</button>
+                    <button
+                        class="border border-slate-300 rounded-md font-bold text-sm capitalize px-3 py-1">airlines</button>
+                    <button
+                        class="border border-slate-300 rounded-md font-bold text-sm capitalize px-3 py-1">airpots</button>
+                    <button
+                        class="border border-slate-300 rounded-md font-bold text-sm capitalize px-3 py-1">amenities</button>
+                    <select name="" id="" class="capitalize text-blue-500 bg-transparent text-sm font-semibold">
+                        <option value="edit-search">edit search</option>
+                    </select>
+                </div>
+                <div id="stars" class="flex items-center divide-x">
+                    <div id="two-stars" class="grid grid-cols-3 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <div id="three-stars" class="grid grid-cols-3 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <div id="four-stars" class="grid grid-cols-3 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <div id="five-stars" class="grid grid-cols-3 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-200">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <div id="six-stars" class="grid grid-cols-3 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-slate-800">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- category box - end -->
+            <!-- content - start -->
+            <div id="content" class="p-5 max-h-[90dvh] overflow-scroll">
+                <div id="sort-bar" class="flex justify-between items-center p-5">
+                    <div id="sorting" class="text">
+                        <label for="#sort">Sort by:</label>
+                        <select name="sort" id="sort" class="font-bold capitalize bg-transparent">
+                            <option value="recommended">recommended</option>
+                        </select>
+                    </div>
+                    <div id="avg-statistic" class="flex gap-1 items-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-alert w-5 h-5 stroke-2 stroke-blue-500">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" x2="12" y1="8" y2="12" />
+                                <line x1="12" x2="12.01" y1="16" y2="16" />
+                            </svg>
+                        </span>
+                        <p class="font-semibold capitalize">avg fare: $225</p>
+                    </div>
+                </div>
+                <div id="flights" class="flex flex-col gap-3 p-5">
+                    <div id="flight-item" class="bg-white grid grid-cols-2 shadow-lg">
+                        <div id="left-side" class="flex items-start p-3">
+                            <div id="logo" class="border-2 w-8 h-8 rounded-full m-3">
+                                <img class="w-8" src="../assets/logos/flights-page/delta-airlines.png" alt="">
+                            </div>
+                            <div id="flight-info">
+                                <p id="flight-time" class="text-2xl font-medium p-3">7:40 AM - 9:12 AM</p>
+                                <div id="flight-details" class="grid grid-cols-3 gap-10 p-3">
+                                    <div id="airline">
+                                        <p class="capitalize text-sm font-semibold">delta air lines</p>
+                                        <select class="capitalize text-blue-500 bg-transparent text-xs font-medium">
+                                            <option value="detail">flight details</option>
+                                        </select>
+                                    </div>
+                                    <div id="type">
+                                        <p class="capitalize text-sm font-semibold">nonstop</p>
+                                        <p class="text-slate-400 text-xs font-medium">1h 32m</p>
+                                    </div>
+                                    <div id="direction">
+                                        <p class=" text-sm font-semibold">SFO to LAX</p>
+                                        <p class="text-slate-400 text-xs font-medium">DL 1443</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right-side" class="flex justify-end items-center p-5">
+                            <div id="flight-category-buttons" class="grid grid-cols-5 gap-3">
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$156</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">main</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$204</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">comfort+</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$249</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">business</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$386</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">delta one</p>
+                                </button>
+                                <button id="disabled"
+                                    class="flex flex-col gap-5 justify-center items-center border rounded-md bg-slate-100 p-3">
+                                    <p class="text-4xl text-slate-300 font-semibold w-14">···</p>
+                                </button>
+                                <p class="text-[0.6rem] text-blue-500 font-semibold">1 more option</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flight-item" class="bg-white grid grid-cols-2 shadow-lg">
+                        <div id="left-side" class="flex items-start p-3">
+                            <div id="logo" class="border-2 w-8 h-8 rounded-full m-3">
+                                <img class="w-8" src="../assets/logos/flights-page/delta-airlines.png" alt="">
+                            </div>
+                            <div id="flight-info">
+                                <p id="flight-time" class="text-2xl font-medium p-3">7:40 AM - 9:12 AM</p>
+                                <div id="flight-details" class="grid grid-cols-3 gap-10 p-3">
+                                    <div id="airline">
+                                        <p class="capitalize text-sm font-semibold">delta air lines</p>
+                                        <select class="capitalize text-blue-500 bg-transparent text-xs font-medium">
+                                            <option value="detail">flight details</option>
+                                        </select>
+                                    </div>
+                                    <div id="type">
+                                        <p class="capitalize text-sm font-semibold">nonstop</p>
+                                        <p class="text-slate-400 text-xs font-medium">1h 32m</p>
+                                    </div>
+                                    <div id="direction">
+                                        <p class=" text-sm font-semibold">SFO to LAX</p>
+                                        <p class="text-slate-400 text-xs font-medium">DL 1443</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right-side" class="flex justify-end items-center p-5">
+                            <div id="flight-category-buttons" class="grid grid-cols-5 gap-3">
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$156</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">main</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$204</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">comfort+</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$249</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">business</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$386</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">delta one</p>
+                                </button>
+                                <button id="disabled"
+                                    class="flex flex-col gap-5 justify-center items-center border rounded-md bg-slate-100 p-3">
+                                    <p class="text-4xl text-slate-300 font-semibold w-14">···</p>
+                                </button>
+                                <p class="text-[0.6rem] text-blue-500 font-semibold">1 more option</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flight-item" class="bg-white grid grid-cols-2 shadow-lg">
+                        <div id="left-side" class="flex items-start p-3">
+                            <div id="logo" class="border-2 w-8 h-8 rounded-full m-3">
+                                <img class="w-8" src="../assets/logos/flights-page/delta-airlines.png" alt="">
+                            </div>
+                            <div id="flight-info">
+                                <p id="flight-time" class="text-2xl font-medium p-3">7:40 AM - 9:12 AM</p>
+                                <div id="flight-details" class="grid grid-cols-3 gap-10 p-3">
+                                    <div id="airline">
+                                        <p class="capitalize text-sm font-semibold">delta air lines</p>
+                                        <select class="capitalize text-blue-500 bg-transparent text-xs font-medium">
+                                            <option value="detail">flight details</option>
+                                        </select>
+                                    </div>
+                                    <div id="type">
+                                        <p class="capitalize text-sm font-semibold">nonstop</p>
+                                        <p class="text-slate-400 text-xs font-medium">1h 32m</p>
+                                    </div>
+                                    <div id="direction">
+                                        <p class=" text-sm font-semibold">SFO to LAX</p>
+                                        <p class="text-slate-400 text-xs font-medium">DL 1443</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right-side" class="flex justify-end items-center p-5">
+                            <div id="flight-category-buttons" class="grid grid-cols-5 gap-3">
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$156</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">main</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$204</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">comfort+</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$249</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">business</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$386</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">delta one</p>
+                                </button>
+                                <button id="disabled"
+                                    class="flex flex-col gap-5 justify-center items-center border rounded-md bg-slate-100 p-3">
+                                    <p class="text-4xl text-slate-300 font-semibold w-14">···</p>
+                                </button>
+                                <p class="text-[0.6rem] text-blue-500 font-semibold">1 more option</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flight-item" class="bg-white grid grid-cols-2 shadow-lg">
+                        <div id="left-side" class="flex items-start p-3">
+                            <div id="logo" class="border-2 w-8 h-8 rounded-full m-3">
+                                <img class="w-8" src="../assets/logos/flights-page/delta-airlines.png" alt="">
+                            </div>
+                            <div id="flight-info">
+                                <p id="flight-time" class="text-2xl font-medium p-3">7:40 AM - 9:12 AM</p>
+                                <div id="flight-details" class="grid grid-cols-3 gap-10 p-3">
+                                    <div id="airline">
+                                        <p class="capitalize text-sm font-semibold">delta air lines</p>
+                                        <select class="capitalize text-blue-500 bg-transparent text-xs font-medium">
+                                            <option value="detail">flight details</option>
+                                        </select>
+                                    </div>
+                                    <div id="type">
+                                        <p class="capitalize text-sm font-semibold">nonstop</p>
+                                        <p class="text-slate-400 text-xs font-medium">1h 32m</p>
+                                    </div>
+                                    <div id="direction">
+                                        <p class=" text-sm font-semibold">SFO to LAX</p>
+                                        <p class="text-slate-400 text-xs font-medium">DL 1443</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right-side" class="flex justify-end items-center p-5">
+                            <div id="flight-category-buttons" class="grid grid-cols-5 gap-3">
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$156</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">main</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$204</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">comfort+</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$249</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">business</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$386</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">delta one</p>
+                                </button>
+                                <button id="disabled"
+                                    class="flex flex-col gap-5 justify-center items-center border rounded-md bg-slate-100 p-3">
+                                    <p class="text-4xl text-slate-300 font-semibold w-14">···</p>
+                                </button>
+                                <p class="text-[0.6rem] text-blue-500 font-semibold">1 more option</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flight-item" class="bg-white grid grid-cols-2 shadow-lg">
+                        <div id="left-side" class="flex items-start p-3">
+                            <div id="logo" class="border-2 w-8 h-8 rounded-full m-3">
+                                <img class="w-8" src="../assets/logos/flights-page/delta-airlines.png" alt="">
+                            </div>
+                            <div id="flight-info">
+                                <p id="flight-time" class="text-2xl font-medium p-3">7:40 AM - 9:12 AM</p>
+                                <div id="flight-details" class="grid grid-cols-3 gap-10 p-3">
+                                    <div id="airline">
+                                        <p class="capitalize text-sm font-semibold">delta air lines</p>
+                                        <select class="capitalize text-blue-500 bg-transparent text-xs font-medium">
+                                            <option value="detail">flight details</option>
+                                        </select>
+                                    </div>
+                                    <div id="type">
+                                        <p class="capitalize text-sm font-semibold">nonstop</p>
+                                        <p class="text-slate-400 text-xs font-medium">1h 32m</p>
+                                    </div>
+                                    <div id="direction">
+                                        <p class=" text-sm font-semibold">SFO to LAX</p>
+                                        <p class="text-slate-400 text-xs font-medium">DL 1443</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right-side" class="flex justify-end items-center p-5">
+                            <div id="flight-category-buttons" class="grid grid-cols-5 gap-3">
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$156</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">main</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$204</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">comfort+</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$249</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">business</p>
+                                </button>
+                                <button class="flex flex-col gap-5 items-center border rounded-md capitalize p-3">
+                                    <p class="font-bold text-lg">$386</p>
+                                    <p class="text-xs text-slate-400 font-semibold w-14">delta one</p>
+                                </button>
+                                <button id="disabled"
+                                    class="flex flex-col gap-5 justify-center items-center border rounded-md bg-slate-100 p-3">
+                                    <p class="text-4xl text-slate-300 font-semibold w-14">···</p>
+                                </button>
+                                <p class="text-[0.6rem] text-blue-500 font-semibold">1 more option</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content - end -->
+        </div>
+        <!-- main box - end -->
+    </div>
+    <!-- container - end -->
+</body>
+
+</html>
