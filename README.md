@@ -2,11 +2,11 @@
 # Plane Travel Site
 
 I created plane travel and reservation site with using Schiphol Flight API.
-## Theme
+
+## Screenshots
 
 ![App Screenshot](https://github.com/muhammetsarican/plane-travel-site/blob/main/client/public/screenshot_2024-09-24-224059.png)
 ![App Screenshot](https://github.com/muhammetsarican/plane-travel-site/blob/main/client/public/screenshot_2024-09-24-224116.png)
-
 
 ## API Reference
 
