@@ -1,17 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import AlitaliaLogo from "../../../../assets/logos/flights/alitalia-logo.png";
+import { useFlightData } from "../../../../providers/FlightDataProvider";
 
 export default (flight: any) => {
     const scheduledTime = new Date(flight.scheduleDateTime);
     const landingTime = new Date(flight.estimatedLandingTime);
 
-    console.log((landingTime.getTime() - scheduledTime.getTime()) / 86400)
+    const { setCurrentFlight } = useFlightData();
+    const navigate = useNavigate();
+
     return (
         <div id="flight-item">
             <div className="bg-primary-white rounded-lg rounded-es-none h-fit">
-                {(() => {
-                    console.log(flight)
-                    return <p></p>
-                })()}
                 <div id="flight-title" className="text-sm font-bold p-3">Milano - Madrid</div>
                 <div id="flight-direction" className="flex justify-between items-center p-5">
                     <div id="source-detail">
@@ -75,7 +75,10 @@ export default (flight: any) => {
                         <p className="text-slate-500 font-semibold text-xs">Round Trip</p>
                     </div>
                     <div id="book-button" className="mt-auto">
-                        <button
+                        <button onClick={() => {
+                            setCurrentFlight(flight);
+                            navigate(`/flight-detail/${flight._id}`)
+                        }}
                             className="bg-primary-purple text-primary-white px-6 py-4 rounded-ss-lg rounded-ee-lg text-sm font-bold capitalize">book
                             flight</button>
                     </div>
