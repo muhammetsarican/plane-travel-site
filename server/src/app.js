@@ -4,6 +4,7 @@ const config = require("./config/index.js");
 const database = require("./database/index.js");
 const FlightRouter = require("./routes/FlightRoute.js");
 const setFlightData = require("./helpers/setFlightData.js");
+const UserFlightRouter = require("./routes/UserFlightRoute.js");
 
 config();
 database();
@@ -27,5 +28,6 @@ app.get("/", async (req, res) => {
 })
 
 app.use("/flight", FlightRouter);
+app.use("/user-flight", UserFlightRouter);
 
 module.exports = app;
