@@ -25,10 +25,6 @@ const FlightSchema = new mongoose.Schema({
     serviceType: String,
     terminal: Number,
     schemaVersion: String,
-    isReserved: {
-        type: Boolean,
-        default: false
-    }
 }, {
     versionKey: false,
     timestamps: true

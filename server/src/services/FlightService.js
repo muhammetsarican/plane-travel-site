@@ -1,6 +1,10 @@
 const FlightModel = require("../models/FlightModel");
 
 class FlightService {
+    findAll() {
+        return FlightModel.find({});
+    }
+
     insertMany(data) {
         return FlightModel.insertMany(data, { rawResult: true })
     }
