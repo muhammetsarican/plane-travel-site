@@ -34,6 +34,7 @@ const UserFlightDataProvider = ({ children }: { children: ReactNode }) => {
             data
         })
             .then((response: any) => {
+                setUserFlightData([...userFlightData || [], response.data.message])
                 setAuthId(response.data.message.user_id);
                 localStorage.setItem("user_id", response.data.message.user_id);
             })

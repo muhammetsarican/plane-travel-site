@@ -22,7 +22,7 @@ export default () => {
                     <div id="avg-statistic" className="flex gap-1 items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round"
+                                strokeLinecap="round" strokeLinejoin="round"
                                 className="lucide lucide-circle-alert w-5 h-5 stroke-2 stroke-blue-500">
                                 <circle cx="12" cy="12" r="10" />
                                 <line x1="12" x2="12" y1="8" y2="12" />

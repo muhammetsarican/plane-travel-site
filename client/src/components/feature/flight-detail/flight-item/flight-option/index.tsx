@@ -28,7 +28,7 @@ export default (option: any) => {
             if (element.price !== option.price) return;
             setIsReserved(true);
         })
-    }, [])
+    }, [, userFlightData])
 
     if (isReserved) return <button id="disabled"
         className="flex flex-col gap-5 justify-center items-center border rounded-md bg-slate-100 p-3">

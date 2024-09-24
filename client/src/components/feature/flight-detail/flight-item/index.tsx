@@ -50,8 +50,8 @@ export default (flight: any) => {
             </div>
             <div id="right-side" className="flex justify-end items-center p-5">
                 <div id="flight-category-buttons" className="grid grid-cols-5 gap-3">
-                    {flightOptions.map(option => (
-                        <FlightOption {...option} />
+                    {flightOptions.map((option, index) => (
+                        <FlightOption {...option} key={index} />
                     ))}
                     <p className="text-[0.6rem] text-blue-500 font-semibold">1 more option</p>
                 </div>
