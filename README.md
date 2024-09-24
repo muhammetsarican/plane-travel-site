@@ -16,7 +16,7 @@ Go to the project directory
   cd plane-travel-site
 ```
 
-#### ***Firstly: convert all .env.example files to .env files and fill them your own choices.***
+#### ***Firstly: convert all .env.example files to .env files and fill them with your own choices.***
 
 Run the database with docker
 
