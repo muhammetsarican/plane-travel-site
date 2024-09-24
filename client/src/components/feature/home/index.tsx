@@ -1,10 +1,11 @@
+
 import AvatarImg from "../../../assets/images/avatar/this-person-not-exist.jpeg";
 import VintageCarImg from "../../../assets/images/menu/vintage-car-under-sunset.jpg";
 import BlueHotelImg from "../../../assets/images/menu/blue-hotel.jpg";
 import GreenHolidayImg from "../../../assets/images/menu/green-holiday.jpg";
-
-import FlightItem from "./flight-item";
+import FlightItem from "../home/flight-item";
 import { useFlightData } from "../../../providers/FlightDataProvider";
+
 
 export default () => {
     const { flightData } = useFlightData();
@@ -174,7 +175,7 @@ export default () => {
                     {/* <!-- flights - start --> */}
                     <div id="flight-container" className="grid grid-cols-3 gap-3 m-5">
                         {/* <!-- flight box - start --> */}
-                        <div id="flight-box" className="col-span-2 grid grid-cols-1 gap-2">
+                        <div id="flight-box" className="col-span-2 grid grid-cols-1 gap-2 max-h-[50dvh] overflow-scroll">
                             {flightData?.map(flight => (
                                 <FlightItem {...flight} />
                             ))}
