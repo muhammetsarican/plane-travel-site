@@ -3,7 +3,7 @@ const db = mongoose.connection;
 
 db.once("open", () => {
     db.dropDatabase();
-    console.log("DB connection is successful");
+    console.log("DB connection is successful!");
 });
 
 const connectDB = async () => {
