@@ -1,12 +1,13 @@
 const express = require("express");
 const cors = require("cors");
-const getFlights = require("./helpers/getFlightData");
 const config = require("./config/index.js");
 const database = require("./database/index.js");
-const FlightService = require("./Services/FlightService.js");
+const FlightRouter = require("./routes/FlightRoute.js");
+const setFlightData = require("./helpers/setFlightData.js");
 
 config();
 database();
+setFlightData();
 
 const app = express();
 
@@ -19,13 +20,12 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.get("/", async (req, res) => {
-    const flightData = await getFlights();
-    FlightService.insertMany(flightData.data.flights);
-
     res.status(200).send({
         success: true,
-        message: flightData.data
+        message: "Welcome to server!"
     })
 })
+
+app.use("/flight", FlightRouter);
 
 module.exports = app;
