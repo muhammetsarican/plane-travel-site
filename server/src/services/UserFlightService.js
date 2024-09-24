@@ -1,8 +1,12 @@
 const UserFlightModel = require("../models/UserFlightModel");
 
 class UserFlightService {
+    findAll() {
+        return UserFlightModel.find({});
+    }
+
     create(data) {
-        return UserFlightModel(data).create;
+        return UserFlightModel(data).save();
     }
 
     deleteOne(data) {

@@ -8,7 +8,11 @@ const UserFlightSchema = new mongoose.Schema({
     reserved_flight_id: {
         type: mongoose.Types.ObjectId,
         required: true
-    }
+    },
+    price: String
+}, {
+    versionKey: false,
+    timestamps: true
 });
 
 module.exports = mongoose.model("user-flight", UserFlightSchema);
